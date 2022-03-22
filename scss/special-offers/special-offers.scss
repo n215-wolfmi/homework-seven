@@ -1,0 +1,84 @@
+.special-offers {
+    max-width: $site-width;
+    margin: $center;
+    width: 75%;
+    margin-top: 60px;
+
+    .offers-title {
+        font-size: 25px;
+        font-family: 'Proxima-Nova-ExCn-Thin';
+    }
+
+    .offers-title-underline {
+        color: $site-black;
+        width: 225px;
+        margin-bottom: 37px;
+        margin-top: -12px;
+    }
+    
+    .discount-box {
+        max-width: 550px;
+        display: flex;
+        margin-bottom: 60px;
+    
+        .discount-image {
+            max-height: 287px;
+            max-width: 199px;
+            margin-right: 20px;
+    
+            img {
+                height: 287px;
+                width: 199px;
+            }
+        }
+
+        .discount-info {
+            position: relative;
+            //background-color: aqua;
+
+            .discount-title-underline1 {
+                color: $site-black;
+                width: 237px;
+                margin-bottom: 21px;
+                margin-top: -12px;
+            }
+
+            .discount-title-underline2 {
+                color: $site-black;
+                width: 270px;
+                margin-bottom: 21px;
+                margin-top: -12px;
+            }
+            
+            .discount-percent1 {
+                position: absolute;
+                top: 7px;
+                right: -15px;
+                color: #FF7D38;
+                font-size: 20px;
+                font-family: 'Proxima-Nova-ExCn-Thin';
+            }
+
+            .discount-percent2 {
+                position: absolute;
+                top: 7px;
+                right: -45px;
+                color: #FF7D38;
+                font-size: 20px;
+                font-family: 'Proxima-Nova-ExCn-Thin';
+            }
+
+            .discount-description {
+                font-family: GillSansReg;
+                font-size: 16px;
+            }
+
+            .learn-btn {
+                @include site-button($mgnBtm:0);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}

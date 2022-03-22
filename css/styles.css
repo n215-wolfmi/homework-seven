@@ -1529,4 +1529,86 @@ footer .footer-container .socials {
   text-decoration: none;
 }
 
+.special-offers {
+  max-width: 980px;
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 60px;
+}
+.special-offers .offers-title {
+  font-size: 25px;
+  font-family: "Proxima-Nova-ExCn-Thin";
+}
+.special-offers .offers-title-underline {
+  color: #000000;
+  width: 225px;
+  margin-bottom: 37px;
+  margin-top: -12px;
+}
+.special-offers .discount-box {
+  max-width: 550px;
+  display: flex;
+  margin-bottom: 60px;
+}
+.special-offers .discount-box .discount-image {
+  max-height: 287px;
+  max-width: 199px;
+  margin-right: 20px;
+}
+.special-offers .discount-box .discount-image img {
+  height: 287px;
+  width: 199px;
+}
+.special-offers .discount-box .discount-info {
+  position: relative;
+}
+.special-offers .discount-box .discount-info .discount-title-underline1 {
+  color: #000000;
+  width: 237px;
+  margin-bottom: 21px;
+  margin-top: -12px;
+}
+.special-offers .discount-box .discount-info .discount-title-underline2 {
+  color: #000000;
+  width: 270px;
+  margin-bottom: 21px;
+  margin-top: -12px;
+}
+.special-offers .discount-box .discount-info .discount-percent1 {
+  position: absolute;
+  top: 7px;
+  right: -15px;
+  color: #FF7D38;
+  font-size: 20px;
+  font-family: "Proxima-Nova-ExCn-Thin";
+}
+.special-offers .discount-box .discount-info .discount-percent2 {
+  position: absolute;
+  top: 7px;
+  right: -45px;
+  color: #FF7D38;
+  font-size: 20px;
+  font-family: "Proxima-Nova-ExCn-Thin";
+}
+.special-offers .discount-box .discount-info .discount-description {
+  font-family: GillSansReg;
+  font-size: 16px;
+}
+.special-offers .discount-box .discount-info .learn-btn {
+  background-color: #79ADDC;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-family: "GillSansReg";
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 60px;
+  margin-bottom: 0;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
