@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: GillSansReg;
   src: url(../css/fonts/Gill-Sans.ttf);
 }
+@font-face {
+  font-family: GillSansLight;
+  src: url(../css/fonts/gill_sans_light.ttf);
+}
 .home-nav {
   max-width: 980px;
   width: 75%;
@@ -1609,6 +1613,73 @@ footer .footer-container .socials {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.blog {
+  max-width: 980px;
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 60px;
+}
+.blog .blog-title {
+  font-size: 25px;
+  font-family: "Proxima-Nova-ExCn-Thin";
+}
+.blog .blog-title-underline {
+  color: #000000;
+  width: 100px;
+  margin-bottom: 37px;
+  margin-top: -12px;
+}
+.blog .blog-entry {
+  margin-bottom: 100px;
+  display: flex;
+  max-width: 980px;
+}
+.blog .blog-entry .date-box {
+  min-width: 60px;
+  height: 60px;
+  color: #FFFFFF;
+  background-color: #79ADDC;
+  text-align: center;
+  margin-right: 20px;
+}
+.blog .blog-entry .date-box .date-day {
+  font-family: GillSansReg;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+.blog .blog-entry .date-box .date-month {
+  font-family: GillSansLight;
+  font-size: 12px;
+}
+.blog .blog-entry .blog-info {
+  width: 980px;
+}
+.blog .blog-entry .blog-info .blog-banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/blog.jpg);
+  max-width: 900px;
+  height: 259px;
+  margin-bottom: 20px;
+  width: auto;
+}
+.blog .blog-entry .blog-info .blog-info-words {
+  max-width: 380px;
+}
+.blog .blog-entry .blog-info .blog-info-words .blog-head-info {
+  font-family: GillSansReg;
+  font-size: 15px;
+}
+.blog .blog-entry .blog-info .blog-info-words .blog-main-info {
+  color: #79ADDC;
+  font-family: GillSansReg;
+  font-size: 13px;
+  width: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

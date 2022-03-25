@@ -1,0 +1,76 @@
+.blog {
+    max-width: $site-width;
+    margin: $center;
+    width: 75%;
+    margin-top: 60px;
+
+    .blog-title {
+        font-size: 25px;
+        font-family: 'Proxima-Nova-ExCn-Thin';
+    }
+
+    .blog-title-underline {
+        color: $site-black;
+        width: 100px;
+        margin-bottom: 37px;
+        margin-top: -12px;
+    }
+
+    .blog-entry {
+        margin-bottom: 100px;
+        display: flex;
+        max-width: $site-width;
+    
+        .date-box {
+            min-width: 60px;
+            height: 60px;
+            color: $site-white;
+            background-color: $site-blue;
+            text-align: center;
+            margin-right: 20px;
+    
+            .date-day {
+                font-family: GillSansReg;
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 5px;
+                padding-top: 10px;
+            }
+    
+            .date-month {
+                font-family: GillSansLight;
+                font-size: 12px;
+            }
+        }     
+    
+        .blog-info {
+            width: $site-width;
+    
+            .blog-banner {
+                @include backg-center();
+                background-image: url(../images/blog.jpg);
+                max-width: 900px;
+                height: 259px;
+                margin-bottom: 20px;
+                width: auto;
+            }
+
+            .blog-info-words {
+                max-width: 380px;
+                
+                .blog-head-info {
+                    font-family: GillSansReg;
+                    font-size: 15px;
+                }
+            
+                .blog-main-info {
+                    color: #79ADDC;
+                    font-family: GillSansReg;
+                    font-size: 13px;
+                    width: auto;
+                    
+                }
+            }    
+        }
+    }
+}
