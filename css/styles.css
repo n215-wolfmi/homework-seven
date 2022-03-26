@@ -1689,11 +1689,11 @@ footer .footer-container .socials {
   margin-top: 60px;
   margin-bottom: 100px;
 }
-.contact-us .contact-title {
+.contact-us .contact-title-div .contact-title {
   font-family: ProximaNovaCnThin;
   font-size: 30px;
 }
-.contact-us .contact-title-underline {
+.contact-us .contact-title-div .contact-title-underline {
   width: 159px;
   color: #000000;
   margin-top: -12px;
@@ -1759,11 +1759,18 @@ footer .footer-container .socials {
 }
 
 @media screen and (max-width: 1120px) {
-  .contact-main {
-    flex-direction: column;
+  .contact-us .contact-title-div {
+    text-align: center;
   }
-
-  .contact-info-left {
+  .contact-us .contact-title-div .contact-title-underline {
+    margin: auto;
+    margin-top: -12px;
+  }
+  .contact-us .contact-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us .contact-main .contact-info-left {
     margin-bottom: 34px;
   }
 }

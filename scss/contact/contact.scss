@@ -5,15 +5,18 @@
     margin-top: 60px;
     margin-bottom: 100px;
 
-    .contact-title {
-        font-family: ProximaNovaCnThin;
-        font-size: 30px;
-    }
+    .contact-title-div {
 
-    .contact-title-underline {
-        width: 159px;   
-        color: $site-black;
-        margin-top: -12px;
+        .contact-title {
+            font-family: ProximaNovaCnThin;
+            font-size: 30px;
+        }
+    
+        .contact-title-underline {
+            width: 159px;   
+            color: $site-black;
+            margin-top: -12px;
+        }
     }
 
     .contact-main {
@@ -74,12 +77,33 @@
 }
 
 @media screen and (max-width: 1120px) {
-    .contact-main {
-        flex-direction: column;
-        //align-items: center;
+
+    .contact-us {
+
+        .contact-title-div {
+            text-align: center;
+
+            .contact-title-underline {
+                margin: auto;
+                margin-top: -12px;
+            }
+            
+        }
+    
+        .contact-main {
+            flex-direction: column;
+            align-items: center;
+
+            .contact-info-left {
+                margin-bottom: 34px;
+                
+            }
+
+            .contact-info-right {
+                
+            }
+        }  
     }
 
-    .contact-info-left {
-        margin-bottom: 34px;
-    }
+    
 }
