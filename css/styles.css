@@ -1682,4 +1682,90 @@ footer .footer-container .socials {
   width: auto;
 }
 
+.contact-us {
+  max-width: 980px;
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.contact-us .contact-title {
+  font-family: ProximaNovaCnThin;
+  font-size: 30px;
+}
+.contact-us .contact-title-underline {
+  width: 159px;
+  color: #000000;
+  margin-top: -12px;
+}
+.contact-us .contact-main {
+  margin-top: 50px;
+  display: flex;
+}
+.contact-us .contact-main .contact-info-left {
+  width: 50%;
+}
+.contact-us .contact-main .contact-info-left .contact-map {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/map.jpg);
+  max-width: 400px;
+  height: 442px;
+  width: auto;
+}
+.contact-us .contact-main .contact-info-left .contact-info {
+  margin-top: 34px;
+}
+.contact-us .contact-main .contact-info-left .contact-info p {
+  font-family: GillSansLight;
+  font-size: 18px;
+  margin: 0;
+}
+.contact-us .contact-main .contact-info-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.contact-us .contact-main .contact-info-right .contact-input {
+  max-width: 529px;
+  height: 60px;
+  width: auto;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.contact-us .contact-main .contact-info-right .contact-input-message {
+  max-width: 529px;
+  height: 199px;
+  width: auto;
+  padding-left: 10px;
+  padding-bottom: 140px;
+  margin-bottom: 20px;
+}
+.contact-us .contact-main .contact-info-right .message-btn {
+  background-color: #79ADDC;
+  padding: 10px 20px;
+  border-radius: 0;
+  color: #FFFFFF;
+  font-family: "GillSansReg";
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  width: 167px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1120px) {
+  .contact-main {
+    flex-direction: column;
+  }
+
+  .contact-info-left {
+    margin-bottom: 34px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
