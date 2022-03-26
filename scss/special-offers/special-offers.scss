@@ -4,73 +4,75 @@
     width: 75%;
     margin-top: 60px;
 
-    .offers-title {
-        font-size: 25px;
-        font-family: 'Proxima-Nova-ExCn-Thin';
-    }
+    .top-offers-title-div {
 
-    .offers-title-underline {
-        color: $site-black;
-        width: 225px;
-        margin-bottom: 37px;
-        margin-top: -12px;
+        .top-offers-title {
+            font-size: 25px;
+            font-family: 'Proxima-Nova-ExCn-Thin';
+        }
+
+        .offers-title-underline {
+            color: $site-black;
+            width: 225px;
+            margin-bottom: 37px;
+            margin-top: -12px;
+        }
     }
     
     .discount-box {
-        max-width: 550px;
         display: flex;
         margin-bottom: 60px;
     
         .discount-image {
-            max-height: 287px;
-            max-width: 199px;
             margin-right: 20px;
-    
-            img {
-                height: 287px;
-                width: 199px;
-            }
+            max-width: 199px;
+            width: 100%;
+            height: 287px;
+            object-fit: cover;
         }
 
         .discount-info {
             position: relative;
-            //background-color: aqua;
-
-            .discount-title-underline1 {
-                color: $site-black;
-                width: 237px;
-                margin-bottom: 21px;
-                margin-top: -12px;
-            }
-
-            .discount-title-underline2 {
-                color: $site-black;
-                width: 270px;
-                margin-bottom: 21px;
-                margin-top: -12px;
-            }
+            max-width: 375px;
             
-            .discount-percent1 {
-                position: absolute;
-                top: 7px;
-                right: -15px;
-                color: #FF7D38;
-                font-size: 20px;
-                font-family: 'Proxima-Nova-ExCn-Thin';
-            }
+            .discount-title-div {
+                display: flex;
 
-            .discount-percent2 {
-                position: absolute;
-                top: 7px;
-                right: -45px;
-                color: #FF7D38;
-                font-size: 20px;
-                font-family: 'Proxima-Nova-ExCn-Thin';
+                .offer-title-div {
+                    margin-right: 20px;
+
+                    .offers-title {
+                        font-size: 25px;
+                        font-family: 'Proxima-Nova-ExCn-Thin';
+                    }
+
+                    .discount-title-underline1 {
+                        color: $site-black;
+                        width: 237px;
+                        margin-bottom: 21px;
+                        margin-top: -12px;
+                    }
+        
+                    .discount-title-underline2 {
+                        color: $site-black;
+                        width: 270px;
+                        margin-bottom: 21px;
+                        margin-top: -12px;
+                    }
+                }
+                
+                .discount-percent {
+                    color: #FF7D38;
+                    font-size: 20px;
+                    font-family: 'Proxima-Nova-ExCn-Thin';
+                    padding-top: 5px;
+                }
             }
 
             .discount-description {
                 font-family: GillSansReg;
                 font-size: 16px;
+                padding-right: 85px;
             }
 
             .learn-btn {
@@ -78,6 +80,55 @@
                 position: absolute;
                 bottom: 0;
                 left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    .special-offers {
+
+        .top-offers-title-div {
+            text-align: center;
+
+            .offers-title-underline {
+                margin: -12px auto 37px auto;
+            }
+        }
+        
+        .discount-box {
+            flex-direction: column;
+            align-items: center;
+        
+            .discount-image {
+                margin-bottom: 20px;
+            }
+    
+            .discount-info {
+                
+                .discount-title-div {
+                    text-align: center;
+                    flex-direction: column;
+
+                    .discount-title-underline1 {
+                        margin: auto;
+                    }
+
+                    .discount-title-underline2 {
+                        margin: auto;
+                    }
+                }
+    
+                .discount-description {
+                    margin-bottom: 70px;
+                    text-align: center;
+                    padding-right: 0;
+                }
+    
+                .learn-btn { 
+                    left: 30%;
+                }
             }
         }
     }
