@@ -80,7 +80,7 @@ nav {
   max-width: 980px;
   width: 75%;
   margin: 0 auto;
-  height: 80px;
+  min-height: 80px;
   border-bottom: 2px solid #000000;
   display: flex;
   align-items: center;
@@ -116,6 +116,18 @@ nav .links span {
     margin-top: 13px;
     margin-bottom: 15px;
     line-height: 30px;
+  }
+}
+@media screen and (max-width: 670px) {
+  nav .links {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .links span {
+    padding-bottom: 5px;
+    transform: rotate(90deg);
+    font-size: 30px;
   }
 }
 .banner {
